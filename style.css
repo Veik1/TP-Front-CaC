@@ -1,0 +1,138 @@
+#navbar1 {
+  background-color: rgb(54, 54, 54);
+}
+
+#navbar1 .nav-link {
+  color: white;
+}
+
+#navbar1 .nav-item a {
+  color: rgb(201, 201, 201);
+}
+
+#navbar1 .nav-item a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#navbar2 {
+  background: linear-gradient(to right, #1b3743, #1e5371);
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+
+#navbar2 .nav-link {
+    color: white;
+    text-align: center;
+}
+  
+#navbar2 .nav-item a {
+  color: rgb(255, 255, 255);
+}
+
+#navbar2 .nav-item a:hover {
+  color: rgb(126, 126, 126);
+}
+
+body {
+  width: 100%;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.card-img-top {
+  border: none;
+}
+
+#text-d1d {
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fondo-img {
+  background-image: url(img/ba1.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  padding: 90px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.green {
+  background-color: rgb(63, 202, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 4px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.green:hover {
+  background-color: rgb(54, 182, 71);
+  color: white;
+}
+
+.transparent {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 4px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transparent a {
+  color: white;
+  text-decoration: none;
+}
+.green a {
+  color: white;
+  text-decoration: none;
+}
+
+#confbuttonmargin .d-flex.justify-content-end button {
+  margin-right: 10px;
+}
+
+textarea {
+  caret-color: rgb(146, 146, 146);
+}
+
+textarea::placeholder {
+  font-size: 20px;
+  padding: 6px;
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  body {
+    font-size: 16px;
+  }
+}
