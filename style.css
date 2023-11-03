@@ -120,9 +120,8 @@ textarea {
   caret-color: rgb(146, 146, 146);
 }
 
-textarea::placeholder {
-  font-size: 20px;
-  padding: 6px;
+.center {
+  justify-content: center;
 }
 
 @media screen and (min-width: 720px) {

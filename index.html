@@ -10,12 +10,7 @@
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    /> 
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -228,10 +223,11 @@
           </div>
           <div class="mb-3 mt-3">
             <textarea
-              class="form-control"
+              class="form-control form-control-lg"
               id="exampleFormControlTextarea1"
-              rows="3"
+              rows="4"
               placeholder="Sobre que quieres hablar?"
+              style="width: 49vw"
             ></textarea>
             <label
               for="exampleFormControlTextarea1"
@@ -244,6 +240,111 @@
           </button>
         </form>
       </div>
+    </div>
+
+    <div class="row text-center center">
+      <div
+        class="col me-1 pt-2 pb-2 card border-primary border-2 mb-3 rounded-0"
+        style="max-width: 224px"
+      >
+        <div class="card-body">
+          <h5 class="card-title mb-3">Estudiante</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="fw-bold">80%</p>
+          <p class="card-text text-nowrap">
+            <small class="text-body-secondary">* presentar documentación</small>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="col me-1 pt-2 pb-2 card border-success border-2 mb-3 rounded-0"
+        style="max-width: 224px"
+      >
+        <div class="card-body">
+          <h5 class="card-title mb-3">Trainee</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="fw-bold">50%</p>
+          <p class="card-text text-nowrap">
+            <small class="text-body-secondary">* presentar documentación</small>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="col pt-2 pb-2 card border-warning border-2 mb-3 rounded-0"
+        style="max-width: 224px"
+      >
+        <div class="card-body">
+          <h5 class="card-title mb-3">Junior</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="fw-bold">15%</p>
+          <p class="card-text text-nowrap">
+            <small class="text-body-secondary">* presentar documentación</small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center center">
+      <p class="h5">VENTA</p>
+      <p class="h1">VALOR DE TICKET $200</p>
+    </div>
+
+    <div class="row center" style="width: 100%;">
+      <form class="needs-validation" novalidate>
+
+        <div class="row mb-3 center">
+            <div class="col-3">
+                <input type="text" class="form-control border-2" id="nombre" placeholder="Nombre" aria-label="First name" required>
+                <div class="invalid-feedback">* Por favor, introduzca un carácter alfabético.</div>
+            </div>
+
+            <div class="col-3">
+                <input type="text" class="form-control border-2" id="apellido" placeholder="Apellido" aria-label="Last name" required>
+                <div class="invalid-feedback">* Por favor, introduzca un carácter alfabético.</div> 
+            </div>
+        </div>
+
+            <div class="row mb-3 center">
+                <div class="col-sm-6">
+                <input type="email" class="form-control border-2" id="email" placeholder="Correo" required>
+                </div>
+            </div>
+
+            <div class="row mb-3 center">
+                <div class="col-md-3">
+                    <label for="inputMonto" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control border-2" id="inputMonto" placeholder="cantidad" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputCategoria" class="form-label">Categoría</label>
+                    <select id="inputCategoria" class="form-select border-2" required>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="trainee">Trainee</option>
+                    <option value="junior">Junior</option>
+                    </select>
+                </div>
+        
+            </div>
+        
+            <div class="row center">
+                <div class="alert alert-primary" style="width: 46rem;" role="alert">
+                    Total a Pagar: $ <span id="total"></span>
+                </div>
+            </div>
+
+
+            <div class="row center">
+                <div class="col-3" >
+                    <button class="btn green mb-3" style="width: 19rem;" type="reset" value="Reset">Borrar</button>
+                </div>
+
+                <div class="col-3" >
+                    <button class="btn green mb-3" style="width: 19rem;" type="submit" value="Submit" id="botonResumen">Resumen</button>
+                </div>
+
+        </form>
     </div>
 
     <div>
@@ -295,5 +396,10 @@
         </nav>
       </footer>
     </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
   </body>
 </html>
